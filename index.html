@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ebb802985a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>04 Homework Javascript Basics</title>
+  </head>
+  <body>
+    <h2>Working with Arrays:</h2>
+    <div class="problem">
+      <h4>
+        Sum of Elements: Write a program that calculates the sum of all elements
+        in an array of numbers.
+      </h4>
+      <div class="problem_input">
+        <span>Array:&nbsp;[&nbsp;</span
+        ><input type="text" class="text_input" id="input1" /><span
+          >&nbsp;]&nbsp;</span
+        ><button type="button" id="calculate1">
+          <i class="fa-solid fa-calculator" style="color: #015efe"></i>
+          <span class="calculate_span">calculate</span>
+        </button>
+      </div>
+      <div class="problem_output">
+        <p>Sum:&nbsp;</p>
+        <p id="output1" class="result_output"></p>
+      </div>
+    </div>
+    <div class="problem">
+      <h4>
+        Average of Elements: Calculate the average of elements in an array of
+        numbers.
+      </h4>
+      <div class="problem_input">
+        <span>Array:&nbsp;[&nbsp;</span
+        ><input type="text" class="text_input" id="input2" /><span
+          >&nbsp;]&nbsp;</span
+        ><button type="button" id="calculate2">
+          <i class="fa-solid fa-calculator" style="color: #015efe"></i>
+          <span class="calculate_span">calculate</span>
+        </button>
+      </div>
+      <div class="problem_output">
+        <p>Average:&nbsp;</p>
+        <p id="output2" class="result_output"></p>
+      </div>
+    </div>
+    <div class="problem">
+      <h4>
+        Finding the Smallest/Largest Element: Find the smallest and largest
+        element in an array of numbers.
+      </h4>
+      <div class="problem_input">
+        <span>Array:&nbsp;[&nbsp;</span
+        ><input type="text" class="text_input" id="input3" /><span
+          >&nbsp;]&nbsp;</span
+        ><button type="button" id="calculate3">
+          <i class="fa-solid fa-calculator" style="color: #015efe"></i>
+          <span class="calculate_span">calculate</span>
+        </button>
+      </div>
+      <div class="problem_output">
+        <p>Smallest:&nbsp;</p>
+        <p id="output3_1" class="result_output"></p>
+      </div>
+      <div class="problem_output">
+        <p>Largest:&nbsp;</p>
+        <p id="output3_2" class="result_output"></p>
+      </div>
+    </div>
+    <div class="problem">
+      <h4>
+        Reverse an Array: Create a function that reverses an array of elements.
+      </h4>
+      <div class="problem_input">
+        <span>Array:&nbsp;[&nbsp;</span
+        ><input type="text" class="text_input" id="input4" /><span
+          >&nbsp;]&nbsp;</span
+        ><button type="button" id="calculate4">
+          <i class="fa-solid fa-calculator" style="color: #015efe"></i>
+          <span class="calculate_span">calculate</span>
+        </button>
+      </div>
+      <div class="problem_output">
+        <p>Reversed Array:&nbsp;</p>
+        <p id="output4" class="result_output"></p>
+      </div>
+    </div>
+    <div class="problem">
+      <h4>
+        Search for an Element: Write a program that searches for a specific
+        element in an array and returns its position or an error message if the
+        element is not found.
+      </h4>
+      <div class="problem_input">
+        <span>Array:&nbsp;[&nbsp;</span
+        ><input type="text" class="text_input" id="input5" /><span
+          >&nbsp;]&nbsp;</span
+        ><button type="button" id="calculate5">
+          <i class="fa-solid fa-calculator" style="color: #015efe"></i>
+          <span class="calculate_span">calculate</span>
+        </button>
+      </div>
+      <div class="problem_input">
+        <span>Element to find:&nbsp;</span
+        ><input type="text" class="text_input" id="elementtofind5" /><span
+          >&nbsp;</span
+        >
+      </div>
+      <div class="problem_output">
+        <p>Element found at position:&nbsp;</p>
+        <p id="output5" class="result_output"></p>
+      </div>
+    </div>
+    <h2>Working with Strings:</h2>
+    <div class="problem">
+      <h4>
+        Counting Characters: Write a program that counts how many characters of
+        a specific type (e.g., uppercase letters) are in a given string.
+      </h4>
+      <div class="problem_input">
+        <span>String:&nbsp;</span
+        ><input type="text" class="text_input" id="input6" /><button
+          type="button"
+          id="calculate6"
+        >
+          <i class="fa-solid fa-calculator" style="color: #015efe"></i>
+          <span class="calculate_span">calculate</span>
+        </button>
+      </div>
+      <div class="problem_input">
+        <label for="typeofcharacters6"
+          >Type of characters to count:&nbsp;</label
+        >
+        <select name="type-of-string" class="text_input" id="typeofcharacters6">
+          <option value="">--Please choose an option--</option>
+          <option value="upper">Uppercase letters</option>
+          <option value="lower">Lowercase letters</option>
+        </select>
+      </div>
+      <div class="problem_output">
+        <p>Number of letters:&nbsp;</p>
+        <p id="output6" class="result_output"></p>
+      </div>
+    </div>
+    <div class="problem">
+      <h4>
+        Palindrome Check: Check if a given string is a palindrome (reads the
+        same forwards and backward).
+      </h4>
+      <div class="problem_input">
+        <span>String:&nbsp;</span
+        ><input type="text" class="text_input" id="input7" /><button
+          type="button"
+          id="calculate7"
+        >
+          <i class="fa-solid fa-calculator" style="color: #015efe"></i>
+          <span class="calculate_span">calculate</span>
+        </button>
+      </div>
+      <div class="problem_output">
+        <p>Palindrome:&nbsp;</p>
+        <p id="output7" class="result_output"></p>
+      </div>
+    </div>
+    <div class="problem">
+      <h4>Reverse a String: Create a function that reverses a given string.</h4>
+      <div class="problem_input">
+        <span>String:&nbsp;</span
+        ><input type="text" class="text_input" id="input8" /><button
+          type="button"
+          id="calculate8"
+        >
+          <i class="fa-solid fa-calculator" style="color: #015efe"></i>
+          <span class="calculate_span">calculate</span>
+        </button>
+      </div>
+      <div class="problem_output">
+        <p>Reversed String:&nbsp;</p>
+        <p id="output8" class="result_output"></p>
+      </div>
+    </div>
+    <div class="problem">
+      <h4>Removing Whitespace: Remove all whitespace from a given string.</h4>
+      <div class="problem_input">
+        <span>String:&nbsp;</span
+        ><input type="text" class="text_input" id="input9" /><button
+          type="button"
+          id="calculate9"
+        >
+          <i class="fa-solid fa-calculator" style="color: #015efe"></i>
+          <span class="calculate_span">calculate</span>
+        </button>
+      </div>
+      <div class="problem_output">
+        <p>Modified String:&nbsp;</p>
+        <p id="output9" class="result_output"></p>
+      </div>
+    </div>
+    <div class="problem">
+      <h4>
+        Checking for Substrings: Write a program that checks if a given string
+        contains a specific substring.
+      </h4>
+      <div class="problem_input">
+        <span>String:&nbsp;</span
+        ><input type="text" class="text_input" id="input10" /><button
+          type="button"
+          id="calculate10"
+        >
+          <i class="fa-solid fa-calculator" style="color: #015efe"></i>
+          <span class="calculate_span">calculate</span>
+        </button>
+      </div>
+      <div class="problem_input">
+        <span>Substring to check for:&nbsp;</span
+        ><input type="text" class="text_input" id="stringToCheckFor10" />
+      </div>
+      <div class="problem_output">
+        <p>The string contains the substring?&nbsp;</p>
+        <p id="output10" class="result_output"></p>
+      </div>
+    </div>
+    <h2>Other problems:</h2>
+    <div class="problem">
+      <h4>
+        Using Loops (for and while): Multiplication Table: Display the
+        multiplication table for a given number using a for loop.
+      </h4>
+      <div class="problem_input">
+        <span>Number:&nbsp;</span
+        ><input type="number" class="text_input" id="input11" /><button
+          type="button"
+          id="calculate11"
+        >
+          <i class="fa-solid fa-calculator" style="color: #015efe"></i>
+          <span class="calculate_span">calculate</span>
+        </button>
+      </div>
+      <div class="problem_output">
+        <p>Multiplication Table:&nbsp;</p>
+        <p id="output11" class="result_output"></p>
+      </div>
+    </div>
+    <div class="problem">
+      <h4>
+        Prime Numbers: Find all prime numbers up to a given number using a for
+        loop.
+      </h4>
+      <div class="problem_input">
+        <span>Limit:&nbsp;</span
+        ><input type="number" class="text_input" id="input12" /><button
+          type="button"
+          id="calculate12"
+        >
+          <i class="fa-solid fa-calculator" style="color: #015efe"></i>
+          <span class="calculate_span">calculate</span>
+        </button>
+      </div>
+      <div class="problem_output">
+        <p>Prime numbers up to limit:&nbsp;</p>
+        <p id="output12" class="result_output"></p>
+      </div>
+    </div>
+    <div class="problem">
+      <h4>
+        Fibonacci Series: Display the first n numbers in the Fibonacci series
+        using a for loop.
+      </h4>
+      <div class="problem_input">
+        <span>Count:&nbsp;</span
+        ><input type="number" class="text_input" id="input13" /><button
+          type="button"
+          id="calculate13"
+        >
+          <i class="fa-solid fa-calculator" style="color: #015efe"></i>
+          <span class="calculate_span">calculate</span>
+        </button>
+      </div>
+      <div class="problem_output">
+        <p>Fibonacci Series :&nbsp;</p>
+        <p id="output13" class="result_output"></p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
